@@ -55,9 +55,8 @@ export default function Navbar() {
             </div>
 
             {/* Mobile menu button with animation */}
-            <div className="md:hidden ">
-              <div className="flex">
-            <div className="flex-shrink-0">
+            <div className="md:hidden flex justify-between items-center p-10">
+              <div className="flex-shrink-0">
                 <Link href="/" className="flex flex-col items-center">
                   <span className="font-cinzel text-xl font-bold text-red-800">
                     Active Taekwondo Academy
@@ -79,11 +78,10 @@ export default function Navbar() {
                   <div className={`absolute transform transition-all duration-300 ease-in-out ${
                     isMobileMenuOpen ? 'rotate-0 opacity-100' : '-rotate-180 opacity-0 text-black'
                   }`}>
-                    <X className="h-6 w-6 " />
+                    <X className="h-6 w-6 text-black" />
                   </div>
                 </div>
               </button>
-              </div>
             </div>
           </div>
         </div>
@@ -91,7 +89,7 @@ export default function Navbar() {
         {/* Mobile menu with smooth animation */}
         <div 
           className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out
-            bg-gradient-to-b from-red-400 to-red-500 backdrop-blur-sm
+             backdrop-blur-sm
             ${isMobileMenuOpen ? 'max-h-64 border-t border-red-400' : 'max-h-0'}`}
         >
           <div className={`px-2 py-3 transform transition-all duration-300 ease-in-out ${
