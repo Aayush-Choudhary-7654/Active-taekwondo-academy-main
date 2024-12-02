@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Link from "next/link";
 import ContactModal from './ContactModal';
 import { Menu, X } from 'lucide-react';
